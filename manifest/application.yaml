@@ -4,7 +4,7 @@ metadata:
   annotations:
     argocd-image-updater.argoproj.io/git-branch: main # branch name 
     argocd-image-updater.argoproj.io/myalias.force-update: "true"
-  name: argocd-test
+  name: my_first_argocd
   namespace: argocd
   finalizers:
     - resources-finalizer.argocd.argoproj.io
@@ -15,7 +15,7 @@ spec:
     server: 'https://kubernetes.default.svc'
   source:
     path: ./manifest/ # git repo에 등록되어 있는 manifest 파일의 경로 
-    repoURL: 'git@github.com:Nunuscloud/argocd-test.git'
+    repoURL: 'https://github.com/YoOhan0/CI_CD_Practice.git'
     targetRevision: main
     directory:
       recurse: true
