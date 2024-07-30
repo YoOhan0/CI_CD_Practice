@@ -4,7 +4,7 @@ metadata:
   annotations:
     argocd-image-updater.argoproj.io/git-branch: main # branch name 
     argocd-image-updater.argoproj.io/myalias.force-update: "true"
-  name: my_first_argocd
+  name: my-first-argocd
   namespace: argocd
   finalizers:
     - resources-finalizer.argocd.argoproj.io
