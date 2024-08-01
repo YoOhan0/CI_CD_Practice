@@ -2,6 +2,7 @@
 1
 2
 3
+4
 
 jenkins를 통하여 commit이 추가되면 ,커밋내용을 기반으로 이미지를 만들고 ECR에 이미지를 저장하는 CI과정을 실습 해보았고,
 ArgoCD를 통하여 ./manifest 디렉토리의 변경이 감지되면 argoCD가 디렉토리 내의 리소스들을 Cluster에 배포하고,동기화하는 그리고 문제가 생길 시 Discord WebHook을 이용하여 알람을 보내기까지 하는 CD과정 실습을 해보았다.
